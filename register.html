@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Free Trial — Embodi AI</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="nav scrolled">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>EMBODI<span style="color:var(--text-3)">.AI</span></a>
+    <div class="nav-links"><a href="index.html#products">Products</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+    <div class="nav-cta"><a href="login.html" class="btn btn-ghost btn-sm">Log in</a></div>
+  </div>
+</nav>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <span class="mono-tag">// request access</span>
+    <h1 style="margin-top:12px;">Start your free trial</h1>
+    <p class="sub">Tell us about your line and a deployment engineer will scope a pilot cell with you — no credit card required.</p>
+    <form id="register-form">
+      <div class="field"><label for="name">Full name</label><input type="text" id="name" placeholder="Jordan Reyes" required></div>
+      <div class="field"><label for="email2">Work email</label><input type="email" id="email2" placeholder="you@company.com" required></div>
+      <div class="field"><label for="company">Company</label><input type="text" id="company" placeholder="Northfield Motors" required></div>
+      <div class="field"><label for="password2">Create password</label><input type="password" id="password2" placeholder="••••••••" required></div>
+      <div class="form-msg" id="register-msg"></div>
+      <button type="submit" class="btn btn-primary btn-block">Create account</button>
+    </form>
+    <div class="auth-foot">Already have an account? <a href="login.html">Log in</a></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="verify-modal">
+  <div class="modal-card">
+    <button class="modal-close" id="verify-close" aria-label="Close">×</button>
+    <span class="mono-tag">// verify email</span>
+    <h2 style="margin-top:12px;font-size:22px;">Enter your verification code</h2>
+    <p class="sub" id="verify-copy">We sent a 6-digit code to your email.</p>
+    <div class="field">
+      <label for="verify-code">Verification code</label>
+      <input type="text" id="verify-code" class="code-input" inputmode="numeric" maxlength="6" placeholder="• • • • • •" autocomplete="one-time-code">
+      <div class="field-error" id="verify-error"></div>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" id="verify-submit">Verify &amp; create account</button>
+    <div class="auth-foot"><a href="#" id="verify-resend">Resend code</a></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Embodi AI, Inc. All rights reserved.</span>
+    <span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
