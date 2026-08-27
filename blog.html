@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Embodi AI</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="nav scrolled"><div class="wrap"><a href="index.html" class="brand"><span class="brand-text"><span class="dot"></span>EMBODI<span style="color:var(--text-3)">.AI</span></span><img class="logo-img" alt="Embodi AI logo"></a><div class="nav-links"><a href="index.html#products">Products</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div><div class="nav-cta"><a href="register.html" class="btn btn-primary btn-sm">Start Free Trial</a></div></div></nav>
+
+<article class="article wrap" id="article-1">
+  <span class="mono-tag">// deployment</span>
+  <h1>Why shadow-running beats a big-bang go-live</h1>
+  <div class="meta">By the Embodi Deployment Team · August 3, 2026 · 6 min read</div>
+  <img src="images/poster-ai-training.jpg" alt="Technician training a robot arm via demonstration alongside a computer vision overlay">
+  <p>The riskiest moment in any automation rollout isn't the install — it's the first hour a new system touches a real part with no human hands nearby. Most failed pilots we've inherited didn't fail because the perception model was bad. They failed because the first time it made a decision on live production, nobody had a way to catch a bad call before it shipped.</p>
+  <h2>What shadow-running actually means</h2>
+  <p>Once Embodi Vision and Task Agents are trained on your parts, we don't cut over the cell immediately. Instead, the system runs in shadow mode: it watches the same parts your operators or existing process are handling, makes its own pick, place, and inspection decisions, and logs them — without ever moving a gripper into the live path.</p>
+  <p>Every decision is scored against what actually happened, part by part, shift by shift. A plant engineer gets a daily readout: agreement rate, where the agent would have diverged from the human or PLC-driven process, and why.</p>
+  <h2>Why this changes the internal conversation</h2>
+  <p>Plant managers don't need to take our word that a system is ready. They can look at two weeks of shadow-run data on their own line, on their own parts, and decide for themselves. That's a fundamentally different sell than a vendor demo reel.</p>
+  <ul>
+    <li>Shadow-run agreement rates above 97% are typically ready for a supervised go-live.</li>
+    <li>Divergences are usually clustered in a handful of edge-case part orientations — easy to target for additional training.</li>
+    <li>Because nothing touches the live path yet, there is zero line-down risk during validation.</li>
+  </ul>
+  <h2>What happens after go-live</h2>
+  <p>Shadow-running doesn't stop once a cell goes live. Task Agents continue to log confidence scores on every action, and Fleet Orchestrator routes anything below threshold to a human operator instead of guessing. That's the same discipline that got the cell approved in the first place — it just keeps running.</p>
+</article>
+
+<article class="article wrap" id="article-2" style="border-top:1px solid var(--border);">
+  <span class="mono-tag">// computer vision</span>
+  <h1>Pose estimation for parts you've never labeled</h1>
+  <div class="meta">By the Embodi Vision Team · July 18, 2026 · 5 min read</div>
+  <img src="images/poster-robot-demo.jpg" alt="Robotic gripper precisely picking a small mechanical part off a conveyor belt">
+  <p>Classical pose-estimation pipelines want thousands of labeled images per SKU before they're reliable. On a line running dozens of SKUs with weekly supplier changes, that math never closes — by the time a dataset is labeled, the part has already changed.</p>
+  <h2>Few-shot calibration instead of dataset collection</h2>
+  <p>Embodi Vision separates "understanding geometry" from "understanding this specific part." The geometric backbone is pretrained across a broad library of industrial part shapes. When a new SKU shows up, calibration only needs a handful of reference captures — typically under fifteen minutes on the line — rather than a labeling project.</p>
+  <p>That reference pass captures the part from a small number of angles under your actual cell lighting, which matters more than volume: a model calibrated on your real conditions with a dozen images consistently outperforms one trained on thousands of images from a different lighting setup.</p>
+  <h2>Handling tolerance stacking</h2>
+  <p>Real parts aren't the CAD file. Stamped and cast components carry tolerance stacking that classical template matching struggles with. Embodi Vision's pose estimator outputs a confidence-weighted 6D pose rather than a single best guess, so Task Agents can decide whether to proceed, re-grip, or flag for inspection based on how confident the read actually is.</p>
+  <h2>Where this shows up on the floor</h2>
+  <ul>
+    <li>New SKU onboarding measured in minutes, not weeks of dataset collection.</li>
+    <li>Fewer false-confident grasps on out-of-tolerance parts, because confidence is explicit rather than implicit.</li>
+    <li>Vision QA reuses the same pose and confidence signal to flag likely defects without a separate inspection model.</li>
+  </ul>
+  <p>The result is a perception stack that keeps up with how often your supply chain actually changes — which, on most lines we've deployed to, is far more often than a dataset team could ever keep pace with.</p>
+</article>
+
+<footer><div class="wrap footer-bottom"><span>© 2026 Embodi AI, Inc. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></span></div></footer>
+<script src="js/main.js"></script>
+</body></html>
