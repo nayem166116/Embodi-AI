@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start free trial — Embodi AI</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="nav scrolled">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-text"><span class="dot"></span>EMBODI<span style="color:var(--text-3)">.AI</span></span><img class="logo-img" alt="Embodi AI logo"></a>
+    <div class="nav-links"><a href="index.html#products">Products</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+    <div class="nav-cta"><a href="login.html" class="btn btn-ghost btn-sm">Log in</a></div>
+  </div>
+</nav>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <span class="mono-tag">request access</span>
+    <h1>Start your free trial</h1>
+    <p class="sub">Deploy on one cell, no hardware changes required.</p>
+    <form id="register-form" novalidate>
+      <div class="field"><label for="name">Full name</label><input id="name" type="text" required autocomplete="name" placeholder="Jordan Lee" aria-describedby="name-error"><div class="field-error" id="name-error" aria-live="polite"></div></div>
+      <div class="field"><label for="email2">Work email</label><input id="email2" type="email" required autocomplete="email" placeholder="you@company.com" aria-describedby="email2-error"><div class="field-error" id="email2-error" aria-live="polite"></div></div>
+      <div class="field"><label for="company">Company</label><input id="company" type="text" required autocomplete="organization" placeholder="Company name" aria-describedby="company-error"><div class="field-error" id="company-error" aria-live="polite"></div></div>
+      <div class="field"><label for="password2">Password</label><input id="password2" type="password" required minlength="8" autocomplete="new-password" placeholder="••••••••" aria-describedby="password2-error"><div class="field-error" id="password2-error" aria-live="polite"></div></div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Create account</button>
+      <div class="form-msg" id="register-msg" role="status" aria-live="polite"></div>
+    </form>
+    <div class="auth-foot">Already have an account? <a href="login.html">Log in</a></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="32" viewBox="0 0 180 32" role="img" aria-labelledby="title desc">
+  <title id="title">Embodi AI</title><desc id="desc">Embodi AI geometric lime mark and wordmark</desc>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="1" y="1" width="30" height="30" rx="8" fill="#E8FF52"/>
+    <path d="M9 9h14v4H13v2h8v4h-8v2h10v4H9z" fill="#081019"/>
+    <circle cx="25" cy="7" r="2" fill="#081019"/>
+    <text x="41" y="21.5" fill="#F5F7FA" font-family="IBM Plex Mono, Menlo, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="1">EMBODI</text>
+    <text x="108" y="21.5" fill="#8B98A8" font-family="IBM Plex Mono, Menlo, Consolas, monospace" font-size="16" font-weight="600">.AI</text>
+  </g>
+</svg>
